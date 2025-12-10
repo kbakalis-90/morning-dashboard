@@ -1,0 +1,97 @@
+/* Reset defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Full screen background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Center Horizontal */
+    align-items: center;     /* Center Vertical */
+    color: white;
+    
+    /* A nice dark nature background from Unsplash */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+.dashboard {
+    text-align: center;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5); /* Make text pop against image */
+}
+
+/* Big Clock Style */
+.time-display {
+    font-size: 8rem; /* Huge text */
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+/* Greeting Style */
+.greeting-display {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* Weather Style */
+.weather-display {
+    font-size: 1.2rem;
+    background: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    backdrop-filter: blur(5px);
+}
+/* Focus Section */
+.focus-container {
+    margin-top: 40px;
+    animation: fadeIn 2s ease; /* Smooth fade in */
+}
+
+.focus-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* The Input Field */
+#focus-input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    outline: none; /* Removes the blue glow */
+    width: 80%;
+    max-width: 600px;
+}
+
+#focus-input::placeholder {
+    color: rgba(255,255,255, 0.6);
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+/* The Result Text */
+.focus-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    cursor: pointer; /* Shows hand icon to imply it's clickable */
+    display: none; /* Hidden by default until we type something */
+}
+
+/* A simple fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
