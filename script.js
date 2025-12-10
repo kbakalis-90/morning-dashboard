@@ -19,11 +19,11 @@ function updateClock() {
 
     // Update greeting based on time of day
     if (hours < 12) {
-        greetingElement.innerText = "Good Morning, Developer.";
+        greetingElement.innerText = "Good Morning!";
     } else if (hours < 18) {
-        greetingElement.innerText = "Good Afternoon, Developer.";
+        greetingElement.innerText = "Good Afternoon!";
     } else {
-        greetingElement.innerText = "Good Evening, Developer.";
+        greetingElement.innerText = "Good Evening!";
     }
 }
 
