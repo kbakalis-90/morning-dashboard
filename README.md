@@ -2,7 +2,7 @@
 
 A personalized browser start page that organizes your day with real-time data and focus tracking.
 
-**🔴 Live Demo:** [[Click Here to View Dashboard]([url](https://lucky-sunflower-e16e61.netlify.app/))]
+**🔴 Live Demo:** [[Click Here to View Dashboard]((https://lucky-sunflower-e16e61.netlify.app/))
 
 ![Dashboard Preview](https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?q=80&w=2070&auto=format&fit=crop)
 *(Background used in the app)*
